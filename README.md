@@ -14,14 +14,25 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+##Project details
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+App has 3 routes (Built using angular router module)
+1. /blog (default page)
+2. /glossary
+3. /contact-us
 
-## Running end-to-end tests
+#Blog page
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+uses blog data from https://www.healthcare.gov/api/blog.json
 
-## Further help
+#Glossary page
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+user glossary data from https://www.healthcare.gov/api/glossary.json
+
+You can search in the glossary search bar for keys - Searching is done on the content
+
+for eg. if you search for 'employee', all the glossary content with 'employee' keyword will pop up.
+
+#Contact-us page
+
+Form has been created using Reactive form module. and basic validation has been added.
