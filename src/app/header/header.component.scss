@@ -1,0 +1,28 @@
+.header {
+  height: 10%;
+  background: #DEDEDE;
+  border-bottom: 0.5px solid #888;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .selector {
+    h4 {
+      font-weight: 200 !important;
+    }
+  }
+  .first {
+    margin-top: 15px !important;
+    text-align: right;
+  }
+  .second {
+    text-align: center;
+    margin-top: 15px !important;
+    border-right: 0.2px solid #808080;
+    border-left: 0.2px solid #808080;
+  }
+  .third {
+    margin-top: 15px !important;
+    text-align: left;
+  }
+}

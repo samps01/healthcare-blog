@@ -1,0 +1,38 @@
+<div class="row top-bar container-fluid">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Glossary</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <input type="text" class="search-box" [(ngModel)]="searchQuery" placeholder="Search">
+        <input type="button"  class="ok-button" value="OK" (click)="search(searchQuery)">
+      </div>
+      <div class="col-md-6 dropdown-section">
+        <select name="languages" id="language-selection" placeholder="Language" class="language-dropdown" [(ngModel)]="selectedLang" (change)="getLanguage(selectedLang)">
+          <option value="" disabled selected>Language</option>
+          <option [value]="language" *ngFor="let language of languageArr">{{language}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row glossary-section">
+    <div class="col-md-12" *ngFor="let glossary of glossaryList">
+      <div class="row glossary-card">
+        <div class="col-md-12">
+          <a href="https://www.healthcare.gov{{glossary.url}}" target="_blank"><h3 class="blog-title">{{glossary.title}}</h3></a>
+        </div>
+      </div>
+      <div class="row glossary-content">
+        <div class="col-md-12">
+          <p>{{showContent(glossary.content)}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

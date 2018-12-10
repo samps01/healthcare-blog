@@ -1,0 +1,31 @@
+.top-bar {
+  background: #777777;
+  height:55px;
+  .language-dropdown {
+    margin-top: 10px;
+    width: 200px;
+    height: 35px;
+    box-shadow: 1px 0px 1px 0px;
+  }:focus {
+        outline: none;
+     }
+}
+
+
+.blog-section {
+  .blog-card {
+    a {
+      color: inherit;;
+    }
+    a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+    }
+    .date-tag {
+      margin-top:15px !important;
+    }
+    .category-list {
+      padding-left: 20px;
+    }
+  }
+}
